@@ -32,7 +32,6 @@ int n,x=0;
         } 
 		        if (x==0)
 		        { 
-                printf("Ugly Number
-");
+                printf("Ugly Number");
                 }
 }
