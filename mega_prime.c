@@ -1,13 +1,13 @@
 #include<stdio.h>
-int isprime(int n)
+int fun(int num)
 {
     int i,fc=0;
-    for(i=1;i<n;i++)
-    {
-    	if(n%i==0)
-    	{
-    		fc+=2;
-		}
+    for(i=1;i<=num;i++)
+	{
+		if(num%i==0)
+		{
+			fc++;	
+		}	
 	}
 	if(fc==2)
 	{
@@ -20,19 +20,20 @@ int isprime(int n)
 }
 int main()
 {
-    int n,d,c=0,cc=0;
+    int n,d,c=0,cc=0,temp;
     scanf("%d",&n);
-    if(isprime(n))
+    temp=n;
+    if(fun(n))
     {
         while(n)
         {
             d=n%10;
-            c+=1;
-            if(isprime(d))
+            if(fun(d))
             {
-                cc+=1;
+                cc++;
             }
             n=n/10;
+            c++;
         }
         if(c==cc)
         {
