@@ -1,19 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int n,a[100],i,ind,x;
+    int n,arr[100],x,i,c=0;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d",&arr[i]);
     }
     scanf("%d",&x);
     for(i=0;i<n;i++)
     {
-        if(a[i]==x)
+        if(x==arr[i])
         {
-            ind++;
+            c++;
         }
     }
-    printf("%d",ind);
+    printf("%d",c);
 }
