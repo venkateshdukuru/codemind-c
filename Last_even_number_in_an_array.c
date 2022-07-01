@@ -1,18 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int n,a[100],i,ind;
+    int n,arr[100],i,num;
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d",&arr[i]);
     }
     for(i=0;i<n;i++)
     {
-        if(a[i]%2==0)
+        if(arr[i]%2==0)
         {
-            ind=a[i];
+            num=arr[i];
         }
     }
-    printf("%d",ind);
+    printf("%d",num);
 }
